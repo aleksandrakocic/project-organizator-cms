@@ -11,7 +11,6 @@ function dd($data) {
     die;
 }
 
-
 function view($file, $data = []) {
     $file = str_replace('.', '/', $file);
     extract($data);
@@ -21,3 +20,5 @@ function view($file, $data = []) {
 function redirect($path) {
     header("Location: {$path}");
 }
+
+?>

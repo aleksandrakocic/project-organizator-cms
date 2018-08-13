@@ -27,7 +27,6 @@ class Router
     }
 
     public function direct($uri, $requestMethod) {
-        // dd($_SESSION['auth']);
         if(array_key_exists($uri, $this->routes[$requestMethod])) {
             if($this->routes[$requestMethod][$uri][1]) {
                 if($_SESSION['auth']){
@@ -38,7 +37,6 @@ class Router
             }else{
                      $this->callAction(...explode('@', $this->routes[$requestMethod][$uri][0]));
             }
-            //require $this->routes[$requestMethod][$uri];
         } else {
             require "views/404.view.php";
         }
@@ -46,14 +44,17 @@ class Router
         
 
     }
-
+    
     public function callAction($controller, $method) {
         $c = "\\App\\Controllers\\{$controller}";
         $c = new $c;
-
         if(!method_exists($c, $method)) {
             throw new \Exception('No method');
         }
         return $c->$method();
     }
 }
+
+
+
+?>

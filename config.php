@@ -1,10 +1,14 @@
 <?php
 
+// DATABASE NAME -> newprojectmanager
+
 return [
     'database' => [
-        'name' => 'mydb',
+        'name' => 'newprojectmanager',
         'user' => 'root',
         'password' => '',
         'hostname' => '127.0.0.1'
     ],
 ];
+
+?>

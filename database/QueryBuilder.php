@@ -32,7 +32,9 @@ class QueryBuilder
             ":" . implode(", :", array_keys($payload))
             );
         $query = $this->pdo->prepare($sql);
+        var_dump($query);
         $query->execute($payload);
+        
     }
 
     public function update($table, $payload)
@@ -61,6 +63,14 @@ class QueryBuilder
             return $query->fetch(\PDO::FETCH_OBJ);
         }
     }
+    public function getOneProjectTeam($table, $teamId, $id)
+    {
+        $query = $this->pdo->prepare("SELECT * FROM {$table} WHERE teams_id = {$teamId} AND id = {$id}");
+        $query->execute();
+        return $query->fetch(\PDO::FETCH_OBJ);
+    }
+
+
 
     public function getOneUser($table, $email, $model = "")
     {

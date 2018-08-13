@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/aleksandrakocic/project-organizator-cms/issues"
   },
-  "homepage": "https://github.com/aleksandrakocic/project-organizator-cms#readme",
-  "dependencies": {
-    "composer": "^4.0.0"
-  }
+  "homepage": "https://github.com/aleksandrakocic/project-organizator-cms#readme"
 }

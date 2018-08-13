@@ -1,11 +1,9 @@
 <?php require "partials/header.view.php" ?>
-    <div class="card">
-        <div class="card-header">
-            About Us
-        </div>
 
-        <div class="card-body">
-            We are awesome!
-        </div>
-    </div>
+  <div class=" col content reset">
+  <?php require "views/partials/searchNavH.view.php" ?> 
+   ABOUT US PAGE
+
+
+
 <?php require "partials/footer.view.php" ?>

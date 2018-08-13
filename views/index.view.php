@@ -1,21 +1,73 @@
 <?php require "partials/header.view.php" ?>
-    <ul>
-        <?php foreach ($tasks as $task): ?>
-            <?php if ($task->isCompleted()): ?>
-                <li><strike><?= $task->description ?></strike></li>
-            <?php else: ?>
-                <li><?= $task->description ?></li>
-            <?php endif; ?>
-        <?php endforeach;?>
-    </ul>
+
+  <div class=" col content reset">
+
+    <?php require "views/partials/searchNavH.view.php" ?> 
+    <h1 id='welcome'> WELCOME TO PROJECT ORGANIZATOR </h1>
+    <h1 id='welcome'> These are some exampes</h1>
 
 
-<form action="/task/add" class="form" method="post">
-    <div class="form-group">
-        <label for="description">Task</label>
-        <input type="text" name="description" id="description">
+<div class="card-deck">
+<?php foreach ($projects as $project):?>
+  <div class="card">
+    <p class="card-img-top"> PROJECT</p>
+    <div class="card-body">
+      <h5 class="card-title"><?= $project->title ?></h5>
+      <p class="card-text"><?= $project->description ?></p>
+      <p>start-date:<?= $project->start_date ?></p>
+      <p>duedate: <?= $project->deadline ?> </p>
+
     </div>
+    <div class="card-footer">
+      <small class="text-muted">team number:<?= $project->teams_id?>working on this project</small>
+    </div>
+  </div>
+<?php endforeach; ?>
+</div>
 
-    <button>Submit</button>
-</form>
-<?php require "partials/footer.view.php" ?>
+<style>
+
+.card-deck {
+  margin-top: 50px;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </div>
+
+ <style>
+
+ #welcome {
+     background: transparent;
+     color: #272f5e;
+ }
+ 
+ 
+ </style>
+

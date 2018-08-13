@@ -9,7 +9,7 @@ class ComposerStaticInitc0e7a929780ec1ee0f3024efd98691cf
     public static $classMap = array (
         'App\\Controllers\\Authenticate' => __DIR__ . '/../..' . '/controllers/Authenticate.php',
         'App\\Controllers\\PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
-        'App\\Controllers\\ProductsController' => __DIR__ . '/../..' . '/controllers/ProductsController.php',
+        'App\\Controllers\\ProjectsController' => __DIR__ . '/../..' . '/controllers/ProjectsController.php',
         'App\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
         'App\\Core\\Request' => __DIR__ . '/../..' . '/core/Request.php',
         'App\\Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
@@ -19,6 +19,7 @@ class ComposerStaticInitc0e7a929780ec1ee0f3024efd98691cf
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInitc0e7a929780ec1ee0f3024efd98691cf' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Task' => __DIR__ . '/../..' . '/core/Task.php',
+        'User' => __DIR__ . '/../..' . '/core/User.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

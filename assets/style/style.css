@@ -1,0 +1,266 @@
+/*
+COLORS: 
+ blue : #272f5e;
+  orange: #f59e82; 
+  darkgray: #292F36;
+ */
+
+body{
+    margin:0;
+    padding:0;
+    background-color:  #E9E9E9;
+}
+
+.btn-primary {
+    background: #272f5e;
+}
+
+.center{
+    max-width: 1440px;
+    margin:0 auto;
+}
+.reset{
+    margin:0;
+    padding:0;
+}
+
+
+#main-header {
+    background: transparent;
+    color: #272f5e;
+    font-weight: 600;
+    margin-top: 2vh;
+}
+
+.sidenav {
+    height: 100%;
+}
+.logo{
+    background-color: #272f5e;
+    padding: 4px;
+    border-bottom: 2px solid gray;
+}
+.logo a:first-of-type{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.logo a{ 
+    padding:15px 15px 15px 30px;
+    color: #f59e82;
+}
+.sidemenu{
+
+    background: #272f5e;
+    height:100vh;
+    overflow: hidden;
+
+}
+ .sidemenu ul li{
+    padding-left:30px;
+} 
+.sidemenu ul li a{
+    padding: 20px 8px 20px 16px;
+    color: #f59e82;
+}
+.sidemenu ul li i{
+    color: #f59e82;
+}
+
+
+.toggle-list-items{
+    padding: 20px 8px 20px 16px;
+}
+.sidemenu ul li:hover >a{
+    background-color: white;
+    text-decoration: none;
+    color:#2A2B2A;
+}
+.sidemenu ul li:hover{
+    background-color: white;
+} 
+.sidemenu ul li:hover >i{
+    color:#6AC5B7;
+} 
+
+
+
+.searchNavH{
+    background-color: white;
+    /* background: #292F36; */
+    padding:0px 100px;
+    margin-bottom: 50px;
+    padding-left: 50%;
+}
+
+.searchNavH form .input{
+    border:none;
+    border-bottom: 2px solid #f59e82;
+    background-color:transparent;
+    width: 50px;
+    font-size: 18px;
+   
+}
+
+.searchNavH form input::placeholder{
+    color: #272f5e;
+}
+
+ .searchNavH ul{
+    margin:0;
+    padding:30px 0px;
+}
+.searchNavH ul li{
+    display: inline;
+    margin-left:70px;
+}
+.searchNavH ul li a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #272f5e;
+}
+.searchNavH ul li a:hover{
+    text-decoration: none; 
+
+}
+
+
+
+.toggle-menu{
+    width:75px !important;
+    display:block;
+}
+.toggle-elements{
+    visibility: hidden;
+}
+
+.toggle-logo{
+    display:none;
+}
+.toggle-bar{
+    padding: 26px 15px 26px 35px !important;
+}
+
+
+.heading{
+    padding:0px 80px;
+  
+}
+.content .heading h4{
+    color: #292F36;
+    opacity:0.8;
+    padding: 15px 0px;
+}
+.content .heading a{
+    padding:10px;
+    background-color: #6AC5B7;
+    border-radius: 8px;
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+}
+.content .heading a:hover{
+    background-color: #F2A948;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.content .heading a i {
+    margin-right:5px;
+}
+
+.project-table{
+border: 1px solid black;
+padding:0px 80px;
+}
+
+.content .create{
+    padding:0px 60px;
+}
+.content .create form{
+    background-color: white;
+    padding:10px 20px;
+    margin-top:10px;
+}
+
+.form-group{
+    margin:10px 0px;
+}
+
+.content .create input[type="file"]{
+    background-color: red;
+    border:none;
+    display:none;
+}
+.content .create .image{
+    background-color: #292F36;
+    cursor: pointer;
+    padding:10px 8px;
+    border-radius: 5px;
+    color:white;
+}
+.content .create .image:hover{
+    background-color:#6AC5B7;
+}
+
+.buttons button{
+    margin:10px;
+    border:none;
+    border-radius: 5px; 
+    padding:10px;
+    color:white;
+}
+
+
+.content h1{
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bolder;
+    color: #272f5e;
+    font-size: 20px;
+}
+.content .edit{
+    padding:0px 60px;
+}
+.content .edit form{
+    background-color: white;
+    padding:10px 20px;
+    margin-top:10px;
+}
+
+.form-group{
+    margin:10px 0px;
+}
+
+
+#createAccountA {
+    margin-top: 50px;
+    color: #272f5e;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.content .create input[type="file"]{
+    background-color: red;
+    border:none;
+    display:none;
+}
+.content .create .image{
+    background-color: #292F36;
+    cursor: pointer;
+    padding:10px 8px;
+    border-radius: 5px;
+    color:white;
+}
+.content .create .image:hover{
+    background-color:#6AC5B7;
+}
+
+.buttons button{
+    margin:10px;
+    border:none;
+    border-radius: 5px; 
+    padding:10px;
+    color:white;
+}
+

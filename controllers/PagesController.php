@@ -6,13 +6,17 @@ use App\Core\App;
 
 class PagesController
 {
+
+    // DISPLAY ALL TASKS = ADD NEW TASK
+    // Task - CLASS IN CORE>TASKS.PHP
+    // JEL TAKO PRAVIM ZA SVAKU TABELU
+
     public function home()
     {
-        $tasks = App::get('database')->getAll("tasks", "Task");
-
-        $tasks[0]->complete();
-        return view('index', compact('tasks'));
+        $projects = App::get('database')->getAll("projects");
+        return view('index', compact('projects'));
     }
+
 
     public function contact()
     {
@@ -30,10 +34,24 @@ class PagesController
         return redirect('/');
     }
 
-    public function products()
+    public function projects()
     {
-        $products = App::get('database')->getAll("products");
+        $projects = App::get('database')->getAll("projects");
+        return view('projects', compact('projects'));
+    }
 
-        return view('products', compact('products'));
+    public function teams() 
+    {
+        $teams = App::get('database')->getAll("teams");
+        return view('teams', compact('teams'));
+    }
+
+
+    public function users()
+    {
+        $users = App::get('database')->getAll("users");
+        return view('users', compact('users'));
     }
 }
+
+?>

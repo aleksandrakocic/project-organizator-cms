@@ -8,7 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Controllers\\Authenticate' => $baseDir . '/controllers/Authenticate.php',
     'App\\Controllers\\PagesController' => $baseDir . '/controllers/PagesController.php',
-    'App\\Controllers\\ProductsController' => $baseDir . '/controllers/ProductsController.php',
+    'App\\Controllers\\ProjectsController' => $baseDir . '/controllers/ProjectsController.php',
     'App\\Core\\App' => $baseDir . '/core/App.php',
     'App\\Core\\Request' => $baseDir . '/core/Request.php',
     'App\\Core\\Router' => $baseDir . '/core/Router.php',
@@ -18,4 +18,5 @@ return array(
     'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
     'Composer\\Autoload\\ComposerStaticInitc0e7a929780ec1ee0f3024efd98691cf' => $vendorDir . '/composer/autoload_static.php',
     'Task' => $baseDir . '/core/Task.php',
+    'User' => $baseDir . '/core/User.php',
 );

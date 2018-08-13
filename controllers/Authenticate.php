@@ -1,9 +1,10 @@
 <?php
- 
+
 namespace App\Controllers;
 use \App\Core\App;
 
 class Authenticate {
+
     public function signup()
     {
         return view('signup');
@@ -11,41 +12,37 @@ class Authenticate {
 
     public function createuser(){
         $credentials = $_POST;
-        $credentials->password = $this->hash($credentials);
+        $credentials['password']= $this->hash($credentials);
         App::get('database')->addNew("users", $credentials);
         return redirect('/');
     }
+
     private function hash($credentials){
         $password = $credentials['password'];
         $password = crypt($password, '$1$rasmusle$') . "\n";
-        return $password;
-        
+        return $password;   
     }
 
     public function login()
     {
-
         return view('login');
     }
+
     public function validate(){
         $credentials = $_POST;
         $email = $credentials['email'];
         $user = App::get('database')->getOneUser("users", $email);
         if(!$user){
             return redirect("/admin/login");
+            echo "nema usera";
         }
-
         $password = $this->hash($credentials);
-
         if($password === $user->password) {
             $_SESSION['auth'] = $user;
-            return redirect('/admin/products');
-            
+            return redirect('/admin/projects');
         }else{
-            return redirect('/admin/login');
+            return redirect('/admin/login');     
         }
-
-
     }
     public function logout()
     {
@@ -54,3 +51,6 @@ class Authenticate {
     }
 
 }
+
+
+?>
